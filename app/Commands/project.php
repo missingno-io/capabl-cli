@@ -38,7 +38,7 @@ class project extends Command {
 		$db['host'] = $this->ask( 'Database Host:', 'localhost' );
 
 		$output = shell_exec( "git clone git@bitbucket.org:bmediallc/capabl.io.git $name" );
-		$output = shell_exec( "cd $name && wp core download" );
+		$output = shell_exec( "cd $name && rm -rf .git && wp core download" );
 		file_put_contents( "$name/wp-config.php", $this->generate_wp_config( $name, $db ) );
 
 		$this->newLine();
