@@ -27,11 +27,13 @@ It's also recommended that you've setup your Laravel Valet enviroment to park a 
 ### 3) Install CLI
 
 ```bash
-composer global require missingno/capabl-cli
+composer global require missingno/capabl-cli:dev-master
 ```
 
 ## Usage
 
 ```bash
-
+capabl new <project-name>
 ```
+
+This will install a fresh version of the respository and pull the latest version of Wordpress.  You will be asked for your local database credentials and the  `wp_config.php` file will be automatically generated.
