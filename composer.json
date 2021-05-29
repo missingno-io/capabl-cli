@@ -4,6 +4,7 @@
     "keywords": ["framework", "laravel", "laravel zero", "console", "cli", "wordpress", "bullseye", "capabl"],
     "homepage": "https://wordpress.capabl.io",
     "type": "project",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {

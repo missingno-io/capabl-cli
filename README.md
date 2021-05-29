@@ -26,7 +26,9 @@ It's also recommended that you've setup your Laravel Valet enviroment to park a 
 
 ### 3) Install CLI
 
-
+```bash
+composer global require missingno/capabl-cli
+```
 
 ## Usage
 
