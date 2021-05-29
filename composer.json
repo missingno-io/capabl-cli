@@ -9,7 +9,7 @@
         {
             "name": "Christopher Stage",
             "email": "cj.stage@gmail.com"
-        },
+        }
     ],
     "require": {
         "php": "^7.3|^8.0",
