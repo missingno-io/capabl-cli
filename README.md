@@ -1,36 +1,35 @@
-<p align="center">
-    <img title="Laravel Zero" height="100" src="https://raw.githubusercontent.com/laravel-zero/docs/master/images/logo/laravel-zero-readme.png" />
-</p>
+# Capabl CLI
 
-<p align="center">
-  <a href="https://github.com/laravel-zero/framework/actions"><img src="https://img.shields.io/github/workflow/status/laravel-zero/framework/Tests.svg" alt="Build Status"></img></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/dt/laravel-zero/framework.svg" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/v/laravel-zero/framework.svg?label=stable" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://img.shields.io/packagist/l/laravel-zero/framework.svg" alt="License"></a>
-</p>
-
-<h4> <center>This is a <bold>community project</bold> and not an official Laravel one </center></h4>
-
-Laravel Zero was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a micro-framework that provides an elegant starting point for your console application. It is an **unofficial** and customized version of Laravel optimized for building command-line applications.
-
-- Built on top of the [Laravel](https://laravel.com) components.
-- Optional installation of Laravel [Eloquent](https://laravel-zero.com/docs/database/), Laravel [Logging](https://laravel-zero.com/docs/logging/) and many others.
-- Supports interactive [menus](https://laravel-zero.com/docs/build-interactive-menus/) and [desktop notifications](https://laravel-zero.com/docs/send-desktop-notifications/) on Linux, Windows & MacOS.
-- Ships with a [Scheduler](https://laravel-zero.com/docs/task-scheduling/) and  a [Standalone Compiler](https://laravel-zero.com/docs/build-a-standalone-application/).
-- Integration with [Collision](https://github.com/nunomaduro/collision) - Beautiful error reporting
-
-------
+The capabl CLI is meant to help get users up and running as fast as possible. It makes many assumptions about your
+development environment so please read the requirements carefully.
 
 ## Documentation
 
-For full documentation, visit [laravel-zero.com](https://laravel-zero.com/).
+### 1) Install Project Dependencies
 
-## Support the development
-**Do you like this project? Support it by donating**
+**All Project Dependencies must be installed for this tool to work**
 
-- PayPal: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L)
-- Patreon: [Donate](https://www.patreon.com/nunomaduro)
+- Composer
+- Git
+- WP CLI
 
-## License
+It's recommended that you install al dependencies required for Capabl development and Brew when running OSX
 
-Laravel Zero is an open-source software licensed under the MIT license.
+- Node JS, for NPM
+- Laravel Valet
+- Brew
+
+### 2) Setup environment
+
+To run the tool effectively you must be connected to the capabl.io repository.  This means your bitbucket SSH keypairs must be setup and working on your machine.
+It's also recommended that you've setup your Laravel Valet enviroment to park a directory.
+
+### 3) Install CLI
+
+
+
+## Usage
+
+```bash
+
+```
