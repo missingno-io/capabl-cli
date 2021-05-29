@@ -28,22 +28,32 @@ class project extends Command {
 	 */
 	public function handle() {
 
-
 		$name = $this->argument( 'name' );
-		$this->info( "Creating new Capabl project $name..." );
+
+		$version = $this->choice( 'Install which version?', ['v3', 'v2'], 0 );
+
 		$db         = [];
 		$db['name'] = $this->ask( 'Database Name:', "wp_$name" );
 		$db['user'] = $this->ask( 'Database Password:', 'root' );
 		$db['pass'] = $this->ask( 'Database User:', 'root' );
 		$db['host'] = $this->ask( 'Database Host:', 'localhost' );
 
-		$output = shell_exec( "git clone git@bitbucket.org:bmediallc/capabl.io.git $name" );
+		$this->info( "Creating new Capabl project $name..." );
+
+
+		if($version === 'v3'){
+			$output = shell_exec( "git clone --single-branch --branch v3 git@bitbucket.org:bmediallc/capabl.io.git $name" );
+		}
+		if($version === 'v2'){
+			$output = shell_exec( "git clone --single-branch --branch v2 git@bitbucket.org:bmediallc/capabl.io.git $name" );
+		}
+
 		$output = shell_exec( "cd $name && rm -rf .git && wp core download" );
 		file_put_contents( "$name/wp-config.php", $this->generate_wp_config( $name, $db ) );
 
 		$this->newLine();
-		$this->info( "$name created successfully" );
 
+		$this->info( "$name created successfully" );
 
 	}
 
