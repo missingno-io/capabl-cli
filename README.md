@@ -32,8 +32,19 @@ composer global require missingno/capabl-cli:dev-master
 
 ## Usage
 
+**Create a new Capabl project:**
+
+This will install a fresh version of the repository and pull the latest version of Wordpress.  You will be asked for your local database credentials and the  `wp_config.php` file will be automatically generated.
+
 ```bash
 capabl new <project-name>
 ```
 
-This will install a fresh version of the respository and pull the latest version of Wordpress.  You will be asked for your local database credentials and the  `wp_config.php` file will be automatically generated.
+**Clone and setup an existing project:**
+
+The project name must match the bitbucket repository name.  I.E. if the repository url is `https://bitbucket.org/bmediallc/<project-name>` enter `<project-name>`
+
+```bash
+capabl clone <project-name>
+```
+
